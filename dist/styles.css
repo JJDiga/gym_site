@@ -271,6 +271,51 @@ a {
     color: #fff;
 }
 
+/* Article Section */
+
+.paragraph {
+    background: #141414;
+}
+
+.paragraph h1 {
+    padding: 3rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.paragraph-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.paragraph-container h2,
+.paragraph-container p {
+    color: #fff;
+}
+
+.paragraph-container .card{
+    padding: 2rem 3.5rem;
+}
+
+.paragraph-container .card h2 {
+    margin-bottom: 10px;
+}
+
+.paragraph-container .card .btn {
+    margin-top: 1rem;
+    padding: 7px 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: #df3927;
+    color: #fff;
+}
+
+#graph {
+    width: 80%;
+    height: 80%;
+}
+
 
 /* Media Query */
 
@@ -398,6 +443,17 @@ a {
         padding: 1rem;
         grid-template-columns: 1fr;
     }
+
+    /* Article Section */
+
+    .paragraph-container {
+        grid-template-columns: 1fr;
+    }
+
+    .paragraph-container .card {
+        text-align: center;
+    }
+    
 }
 
 
