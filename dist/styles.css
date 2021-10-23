@@ -8,6 +8,10 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+:root {
+    --background-color: #141414;
+}
+
 a {
     text-decoration: none;
 }
@@ -117,7 +121,7 @@ a {
 /* Hero Section */
 
 .main {
-    background: #141414;
+    background: var(--background-color);
 }
 
 .main__container {
@@ -220,7 +224,7 @@ a {
 
 /* Services Section */
 .services {
-    background: #141414;
+    background: var(--background-color);
 }
 
 .services h1 {
@@ -274,7 +278,7 @@ a {
 /* Article Section */
 
 .paragraph {
-    background: #141414;
+    background: var(--background-color);
 }
 
 .paragraph h1 {
@@ -315,6 +319,43 @@ a {
     width: 80%;
     height: 80%;
 }
+
+/* Blog Posts */
+.posts {
+    background: var(--background-color);
+    color: #fff;
+}
+
+.posts h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.posts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.posts-container .blog {
+    padding: 1.5rem 2rem;
+}
+
+.posts-container h4 {
+    padding: 12px 0;
+    font-size: 1.5rem;
+}
+
+.posts-container img {
+    margin-bottom: 10px;
+    width: 50%;
+    height: 50%;
+}
+
+
 
 
 /* Media Query */
@@ -463,6 +504,12 @@ a {
 
     #image-card {
         display: none;
+    }
+
+    /* Blog Posts */
+
+    .posts-container {
+        grid-template-columns: 1fr;
     }
     
 }
